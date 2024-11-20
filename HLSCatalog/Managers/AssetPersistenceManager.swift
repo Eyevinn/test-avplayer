@@ -191,6 +191,7 @@ class AssetPersistenceManager: NSObject {
 
                 var userInfo = [String: Any]()
                 userInfo[Asset.Keys.name] = asset.stream.name
+                userInfo[Asset.Keys.url] = asset.stream.playlistURL
                 userInfo[Asset.Keys.downloadState] = Asset.DownloadState.notDownloaded.rawValue
 
                 NotificationCenter.default.post(name: .AssetDownloadStateChanged, object: nil,

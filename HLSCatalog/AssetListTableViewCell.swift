@@ -41,7 +41,7 @@ class AssetListTableViewCell: UITableViewCell {
                         break
                 }
 
-                assetNameLabel.text = asset.stream.name
+                assetNameLabel.text = asset.stream.name + ": " + asset.stream.playlistURL
                 downloadStateLabel.text = downloadState.rawValue
                 
                 let notificationCenter = NotificationCenter.default

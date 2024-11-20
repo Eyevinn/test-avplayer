@@ -57,6 +57,8 @@ extension Asset {
          AssetListManager.
          */
         static let name = "AssetNameKey"
+        
+        static let url = "URL"
 
         /**
          Key for the Asset download percentage, used for
